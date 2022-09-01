@@ -1,5 +1,7 @@
 # NREEL NETFLIX CLONE
 
+-App is live [here](https://n-reel.web.app/)
+
 - Nreel is a movie information website that informs users of the latest and trending movies in different categories.
 
 ## Features
@@ -28,3 +30,5 @@
   - Document database for persisting movie favorites
 - FireBase - Deployment
   - Deploying the app live
+
+<img src="./src/assets/nreel.png">
