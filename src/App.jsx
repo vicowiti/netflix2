@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import RouteProtector from "./components/RouteProtector";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -14,7 +15,14 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/account" element={<Account />} />
+        <Route
+          path="/account"
+          element={
+            <RouteProtector>
+              <Account />
+            </RouteProtector>
+          }
+        />
       </Routes>
     </div>
   );
